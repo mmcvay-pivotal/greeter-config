@@ -1,3 +1,6 @@
+ribbon:
+  IsSecure: false
+  
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]:localhost}
