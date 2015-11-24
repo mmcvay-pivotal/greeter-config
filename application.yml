@@ -1,16 +1,11 @@
-pivotal:
-  stringReverserService:
-    name: string-reverser-service
-
-ribbon:
-  IsSecure: false
-
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]:localhost}
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-
+pivotal:
+  stringReverserService:
+    name: string-reverser-service
 logging:
   pattern:
     console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%replace(%xException){'\n','\u2028'}%nopex%n"
@@ -23,9 +18,3 @@ logging:
         springframework:
            web: WARN
            cloud: WARN
-           
-security:
-  basic:
-    enabled: false
-
- 
