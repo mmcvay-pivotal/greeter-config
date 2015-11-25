@@ -1,3 +1,6 @@
+ribbon:
+  IsSecure: false
+  
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]:localhost}
@@ -22,6 +25,4 @@ logging:
 security:
   basic:
     enabled: false
-    
-ribbon:
-  IsSecure: false
+ 
