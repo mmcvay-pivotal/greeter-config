@@ -1,7 +1,7 @@
 ribbon:
   IsSecure: false
   
-eureka:
+eurek:
   instance:
     hostname: ${vcap.application.uris[0]:localhost}
     metadataMap:
