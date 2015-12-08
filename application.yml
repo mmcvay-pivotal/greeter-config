@@ -25,4 +25,8 @@ logging:
 security:
   basic:
     enabled: false
+    
+endpoints:
+  beans:
+      sensitive: false
  
